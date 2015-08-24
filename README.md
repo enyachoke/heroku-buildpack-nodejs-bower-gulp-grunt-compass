@@ -35,11 +35,11 @@ Usage
 
 Create a new app with this buildpack:
 
-    heroku create myapp --buildpack heroku config:add BUILDPACK_URL=https://github.com/stephanmelzer/heroku-buildpack-nodejs-grunt-compass.git
+    heroku create myapp --buildpack heroku config:add BUILDPACK_URL=https://github.com/tamdao/heroku-buildpack-nodejs-bower-gulp-grunt-compass
 
 Or add this buildpack to your current app:
 
-    heroku config:add BUILDPACK_URL=https://github.com/stephanmelzer/heroku-buildpack-nodejs-grunt-compass.git
+    heroku config:add BUILDPACK_URL=https://github.com/tamdao/heroku-buildpack-nodejs-bower-gulp-grunt-compass
 
 Set the `NODE_ENV` environment variable (e.g. `development` or `production`):
 
