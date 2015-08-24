@@ -1,8 +1,3 @@
-# Heroku Buildpack for Node.js
-
-![nodesjs](https://cloud.githubusercontent.com/assets/51578/8882955/3f0c3980-3219-11e5-8666-bc9c926a7356.jpg)
-
-
 ## Documentation
 
 For more information about using Node.js and buildpacks on Heroku, see these Dev Center articles:
