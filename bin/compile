@@ -108,20 +108,20 @@ fi
 
   status "Installing dependencies"
   # Make npm output to STDOUT instead of its default STDERR
-  npm install --userconfig $build_dir/.npmrc --production 2>&1 | indent
+  npm install --userconfig $build_dir/.npmrc --dev 2>&1 | indent
 
   if [ $run_gulp -ne 0 ] && [ ! -f $build_dir/node_modules/.bin/gulp ]; then
     # Install gulp locally
-    npm install --userconfig $build_dir/.npmrc --production gulp 2>&1 | indent
+    npm install --userconfig $build_dir/.npmrc --dev gulp 2>&1 | indent
   fi
   if [ $run_grunt -ne 0 ] && [ ! -f $build_dir/node_modules/.bin/grunt ]; then
     # Install grunt locally
-    npm install --userconfig $build_dir/.npmrc --production grunt-cli 2>&1 | indent
-    npm install --userconfig $build_dir/.npmrc --production grunt 2>&1 | indent
+    npm install --userconfig $build_dir/.npmrc --dev grunt-cli 2>&1 | indent
+    npm install --userconfig $build_dir/.npmrc --dev grunt 2>&1 | indent
   fi
   if [ $run_bower -ne 0 ] && [ ! -f $build_dir/node_modules/.bin/bower ]; then
     # Install bower locally
-    npm install --userconfig $build_dir/.npmrc --production bower 2>&1 | indent
+    npm install --userconfig $build_dir/.npmrc --dev bower 2>&1 | indent
   fi
 )
 
